@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<title>Sprint 1</title>
+<link rel="stylesheet" type="text/css" href="estilos.css">
+	<script type="text/javascript" src="form.js">
+	
+	</script>
+<header>
+	<div class="header">
+	<div class="logo">Logo</div>
+	</div>
+</header>
+<body>
+	<section class="form-registro">
+		<form action="guardar.php" method="get" id="form-registro">
+		<h4>Registro</h4>
+			<p>Tipo de documento</p>
+		<br>
+		<select class = "ingreso" name="documento" id="tipo-de-documento" required>
+			<option value="value1"></option>
+			<option value="value2">Tarjeta de identidad</option>
+			<option value="value3">Cedula</option>
+			<option value="value4">Pasaporte</option>
+			<option value="value5">Tarjeta de residencia</option>
+		</select>
+		<p>Número de documento<br>
+			<input class= "ingreso" type="text" name="numero-doc" id="numero-de-documento" size="20" onclick="checkNumDocumento(numero-doc.value)" required></p>
+		<p>Correo <br>
+			<input class = "ingreso" type="email" name="correo" size="20" onclick="checkCorreo(correo.value);" required></p>
+		<p>Contraseña <br>
+			<input class = "ingreso" type="password" name="contrasena" id="contrasena" onclick="checkContrasena(contrasena.value)"required></p>
+		<p><input class="boton" type="submit" id="btn-registrar" value="Registrar"></p>
+		</form>
+	</section>
+</body>
+	<br>
+	<br>
+	<br>
+<footer>
+	<div class="footer">
+		<br>
+		<div class="footer">Footer</div>
+		<br>
+		</div>
+</footer>
+</head>
+</html>
